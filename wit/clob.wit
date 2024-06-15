@@ -1,0 +1,39 @@
+interface clob {
+    use types.{option-kind, side, order-type, instrument-kind, order-state, liquidity-type};
+
+    record order {
+        instrument-name: string,
+        instrument-kind: instrument-kind,
+        option-kind: option<option-kind>, // only for options
+        cid: string,
+        side: side,
+    }
+
+    record order-status {
+        order: order,
+        order-state: order-state,
+        filled-quantity: option<f64>,
+        filled-price: option<f64>,
+        remaining-quantity: option<f64>,
+    }
+
+    record request-create-order {
+        order: order,
+        order-type: order-type,
+        price: f64,
+        quantity: f64,
+    }
+
+    record trade {
+        cid: string,
+        tid: string,
+        liquidity-type: liquidity-type,
+    }
+
+
+    create-order: func(request: request-create-order) -> result<order, string>;
+    cancel-order: func(cid: string) -> result<order, string>;
+    delete-order: func(cid: string) -> result<order, string>;
+
+}
+

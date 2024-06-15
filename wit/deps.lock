@@ -1,0 +1,9 @@
+[common]
+url = "https://github.com/jabratech/wit-common/archive/main.tar.gz"
+sha256 = "a1d39ee16425cc9873f0d1b724ab53065507d5004d6086695460f77e58b155aa"
+sha512 = "c610cfafc072f26745c768ab0b73056f530d2de30e7b7f84a227ff3f62dd66334fcec1be157180dd88fca0d4c8a27027cc155f452e7e4fa27bbb98e8a25412ec"
+
+[messaging]
+url = "https://github.com/wasmCloud/messaging/archive/v0.2.0-rc.1.tar.gz"
+sha256 = "41ada083aceb2b4ba92d9bd16d19b6462cc02b10378c9a49135c3447f9138a44"
+sha512 = "aa9c819dfd9e85b19661f6087ffd824c44fc38c8a4bc1005c4e7fd34fe844633c52cae7a0412e9ea90f71826e0660e8a3b5672a0f0303c524e4139643ae675ac"

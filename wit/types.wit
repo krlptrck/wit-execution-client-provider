@@ -1,0 +1,81 @@
+interface types {
+    /**
+     * Enum representing the type of liquidity.
+     * - maker: Liquidity provider.
+     * - taker: Liquidity taker.
+     */
+    enum liquidity-type {
+        maker,
+        taker
+    }
+
+    /**
+     * Enum representing the direction of a trade.
+     * - buy: Buying direction.
+     * - sell: Selling direction.
+     * - zero: Neutral or no position.
+     */
+    enum side {
+        buy,
+        sell,
+        zero
+    }
+
+    /**
+     * Enum representing different kinds of financial instruments.
+     * - spot: Spot market instrument.
+     * - fut: Futures contract.
+     * - perp: Perpetual futures contract.
+     * - opt: Options contract.
+     */
+    enum instrument-kind {
+        spot,
+        fut,
+        perp,
+        opt
+    }
+
+    /**
+     * Enum representing the type of an options contract.
+     * - c: Call option.
+     * - p: Put option.
+     */
+    enum option-kind {
+        c,
+        p
+    }
+
+    /**
+     * Enum representing the state of an order.
+     * - open: Order is currently open.
+     * - closed: Order has been closed.
+     * - cancelled: Order has been cancelled.
+     */
+    enum order-state {
+        open,
+        closed,
+        filled,
+        partially-filled,
+        cancelled
+    }
+
+    /**
+     * Enum representing the type of an order.
+     * - limit: Limit order.
+     * - market: Market order.
+     * - stop: Stop order.
+     * - stop-limit: Stop-limit order.
+     * - trailing-stop: Trailing stop order.
+     * - fill-or-kill: Fill or kill order.
+     * - immediate-or-cancel: Immediate or cancel order.
+     */
+    enum order-type {
+        limit,
+        market,
+        stop,
+        stop-limit,
+        trailing-stop,
+        fill-or-kill,
+        immediate-or-cancel
+    }
+}

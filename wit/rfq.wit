@@ -1,0 +1,4 @@
+interface rfq {
+    create-quote: func();
+    delete-quote: func();
+}
