@@ -1,9 +1,6 @@
 package jabratech:provider-execution-client;
 
 world provider-execution-client {
-    import wasmcloud:messaging/handler@0.2.0;
-    
-    export wasmcloud:messaging/consumer@0.2.0;
     export clob;
     export rfq;
 }

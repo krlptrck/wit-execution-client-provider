@@ -31,7 +31,7 @@ interface clob {
     }
 
 
-    create-order: func(request: request-create-order) -> result<order, string>;
+    create-order: func(cid: string) -> result<string, string>;
     cancel-order: func(cid: string) -> result<order, string>;
     delete-order: func(cid: string) -> result<order, string>;
 
